@@ -1,5 +1,5 @@
 func isVowel(c byte) bool {
-\treturn c == 'a' || c == 'i' || c == 'e' || c == 'o' || c == 'u' ||
+    return c == 'a' || c == 'i' || c == 'e' || c == 'o' || c == 'u' ||
 \t\tc == 'A' || c == 'I' || c == 'E' || c == 'O' || c == 'U'
 }
 
@@ -19,7 +19,7 @@ func reverseVowels(s string) string {
         for end >= 0 && !isVowel(sChar[end]) {
             end--;
         }
-        if start < end {
+        if(start < end) {
             swap(sChar, start, end);
             start++;
             end--;
