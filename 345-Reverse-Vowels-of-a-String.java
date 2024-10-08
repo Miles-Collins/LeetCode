@@ -1,5 +1,5 @@
 class Solution {
-      boolean isVowel(char c) {
+    boolean isVowel(char c) {
         return c == 'a' || c == 'i' || c == 'e' || c == 'o' || c == 'u'
                 || c == 'A' || c == 'I' || c == 'E' || c == 'O' || c == 'U';
     }
@@ -21,7 +21,6 @@ class Solution {
             while(end >= 0 && !isVowel(sArr[end])) {
                 end--;
             }
-
             if(start < end) {
                 swap(sArr, start++, end--);
             }
