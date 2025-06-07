@@ -7,7 +7,6 @@ public:
             arr[nums[i]] = 1; 
         }
 
-        int start = 0;
         vector<int> ans;
         for(int i = 1; i <= nums.size(); i++) {
             if(arr[i] == 0) ans.push_back(i);
