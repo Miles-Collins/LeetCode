@@ -1,10 +1,10 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        int a = 0;
+        int XOR1 = 0;
         for(int num : nums) {
-            a ^= num;
+            XOR1 ^= num;
         }
-        return a;
+        return XOR1;
     }
 };
