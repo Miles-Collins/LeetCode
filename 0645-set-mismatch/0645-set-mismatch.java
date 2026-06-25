@@ -4,15 +4,14 @@ class Solution {
         int duplicate = -1;
         int missing = -1;
 
-        for(int num : nums) {
+        for(int num:nums) {
             count[num]++;
         }
 
-        for(int i = 1; i <= nums.length; i++) {
+        for(int i = 1; i <= nums.length; i++){
             if(count[i] == 2) duplicate = i;
             if(count[i] == 0) missing = i;
         }
-
         return new int[]{duplicate, missing};
     }
 }
