@@ -10,18 +10,10 @@ class Solution {
                 int a = stack.pop();
 
                 switch (token) {
-                    case "+":
-                        stack.push(a + b);
-                        break;
-                    case "-":
-                        stack.push(a - b);
-                        break;
-                    case "*":
-                        stack.push(a * b);
-                        break;
-                    default:
-                        stack.push(a / b);
-                        break;
+                    case "+" -> stack.push(a + b);
+                    case "-" -> stack.push(a - b);
+                    case "*" -> stack.push(a * b);
+                    default -> stack.push(a / b);
                 }
             }
         }
