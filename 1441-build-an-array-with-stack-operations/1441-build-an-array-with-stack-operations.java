@@ -16,7 +16,6 @@ class Solution {
                 answer.add("Pop");
             }
         }
-
         return answer;
     }
 }
